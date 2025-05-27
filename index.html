@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon-32x32.png" />
     <title>My Portfolio</title>
     <style>
       :root {
@@ -93,7 +94,6 @@
         animation: fadeInUp 1s forwards;
       }
 
-      /* Floating animation for the name */
       .floating-container {
         animation: float 6s ease-in-out infinite;
         margin-bottom: 20px;
@@ -148,6 +148,7 @@
         transition: all 0.3s ease;
         overflow: hidden;
         z-index: 1;
+        margin-top: auto; 
       }
 
       .project-button::before {
@@ -212,6 +213,9 @@
         opacity: 0;
         transform: translateY(30px);
         animation: fadeInUp 0.8s forwards;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
 
       .project-card:nth-child(1) {
@@ -254,6 +258,9 @@
 
       .project-content {
         padding: 1.5rem;
+        display: flex; 
+        flex-direction: column; 
+        flex: 1; 
       }
 
       .project-content h3 {
@@ -276,7 +283,6 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 2rem;
-
       }
 
       .tag {
@@ -410,7 +416,6 @@
         color: var(--gray);
       }
 
-      /* Animation Keyframes */
       @keyframes fadeInUp {
         from {
           opacity: 0;
@@ -455,7 +460,6 @@
         }
       }
 
-      /* Animated typing effect for small screens */
       .typing-container {
         height: 40px;
         display: flex;
@@ -563,6 +567,29 @@
       <div class="projects">
         <div class="project-card scroll-animated">
           <div class="project-img">
+            <img src="/images/Workout-Tracker.png" alt="Workout Tracker" />
+          </div>
+          <div class="project-content">
+            <h3>Workout Tracker</h3>
+            <p>A full stack app that tracks your workout.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Mongoose</span>
+            </div>
+            <a
+              href="https://github.com/ChrApostolidis/Workout_Tracker"
+              target="_blank"
+              class="project-button"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="project-card scroll-animated">
+          <div class="project-img">
             <img src="images/Growth-Hub.png" alt="Growth-Hub" />
           </div>
           <div class="project-content">
@@ -602,25 +629,6 @@
               class="project-button"
               >View Project</a
             >
-          </div>
-        </div>
-
-        <div class="project-card scroll-animated">
-          <div class="project-img">
-            <img src="/api/placeholder/400/200" alt="Project 3" />
-          </div>
-          <div class="project-content">
-            <h3>Weather Dashboard</h3>
-            <p>
-              An interactive weather forecast application with location
-              detection.
-            </p>
-            <div class="tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">API Integration</span>
-              <span class="tag">CSS</span>
-            </div>
-            <a href="#" class="project-button">View Project</a>
           </div>
         </div>
       </div>
