@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
     <title>My Portfolio</title>
     <style>
       :root {
@@ -40,7 +40,7 @@
         width: 100%;
         max-width: 1700px;
         margin: 0 auto;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
       }
 
       .container-projects {
@@ -394,7 +394,7 @@
       .social-links {
         display: flex;
         justify-content: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
       }
 
       .social-links a {
@@ -637,7 +637,7 @@
     <section id="about" class="container-projects">
       <div class="about">
         <div class="about-img">
-          <img src="/api/placeholder/500/400" alt="About Me" />
+          <img src="images/dev-photo.png" alt="Dev Photo" />
         </div>
         <div class="about-content">
           <h2>About Me</h2>
@@ -734,7 +734,7 @@
         } else if (isDeleting && charIndex === 0) {
           isDeleting = false;
           textIndex = (textIndex + 1) % texts.length;
-          typingDelay = 500; // Pause before typing next
+          typingDelay = 500; 
         }
 
         setTimeout(typeText, typingDelay);
